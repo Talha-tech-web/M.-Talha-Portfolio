@@ -1,97 +1,150 @@
 # M Talha Jameel — Portfolio
 
-A self-contained, animated, monochrome (cyber-minimal) personal portfolio site.
-Pure HTML, CSS, and vanilla JavaScript — no frameworks, no build tools, no
-external JS libraries, no backend.
+\
 
-## File structure
+A self-contained, animated, cyber-minimal portfolio website built using pure HTML, CSS, and vanilla JavaScript. No frameworks, no build tools, and no external dependencies.
+
+Designed with a focus on performance, simplicity, and clean aesthetics.
+
+---
+<img width="1916" height="916" alt="image" src="https://github.com/user-attachments/assets/35d6862e-0a4c-4f84-94ae-4a30de71bf7b" />
+<img width="1911" height="912" alt="image" src="https://github.com/user-attachments/assets/1af42cc8-d1c0-4031-b113-6bdac865a1ef" />
+
+
+## Features
+
+* Fully responsive design
+* Dark/Light theme toggle (stored using localStorage)
+* Monochrome cyber-minimal design system
+* Smooth scroll-reveal animations across all sections
+* Animated particle network background (Canvas API)
+* Optimized performance with zero external libraries
+* Respects prefers-reduced-motion for accessibility
+
+---
+
+## Project Structure
 
 ```
 portfolio/
-├─ index.html                  basic shell / entry page
-├─ portfolio.html              the full site (all sections + data)
-├─ styles.css                  all design tokens + component styles
-├─ script.js                   theme engine, particle network, animations
-├─ M_Talha_Jameel_Resume.pdf   resume (download + view)
-├─ talha img.jpg               profile photo
-└─ README.md                   this file
+├─ index.html
+├─ portfolio.html
+├─ styles.css
+├─ script.js
+├─ M_Talha_Jameel_Resume.pdf
+├─ talha img.jpg
+└─ README.md
 ```
 
-Everything lives in one flat folder — no subfolders — so the zip can be
-extracted anywhere and opened directly with no broken links.
+Everything is placed in a flat structure so the project can run anywhere without path issues.
+
+---
 
 ## Pages
 
-- **index.html** — a minimal entry page: name, role, tagline, and buttons to
-  enter the full portfolio or grab the resume.
-- **portfolio.html** — the complete site: Hero, About, Skills, Projects,
-  My Journey (a combined narrative timeline of education + experience),
-  Education, Experience, Certifications, and Contact. The animated
-  particle-network background and scroll-reveal animations run across the
-  **entire scrollable page**, not just the top section.
+### index.html
 
-## Running it locally
+A minimal entry page containing:
 
-No build step is required. Either:
+* Name and role
+* Short tagline
+* Buttons to open the portfolio or download the resume
 
-1. Double-click `index.html` (or `portfolio.html`) to open it directly in a
-   browser, or
-2. Serve the folder with any static server, e.g.:
-   ```bash
-   npx serve .
-   # or
-   python3 -m http.server 8080
-   ```
+### portfolio.html
 
-## Deploying
+The complete portfolio including:
 
-Drop the whole folder into any static host:
+* Hero
+* About
+* Skills
+* Projects
+* Journey Timeline
+* Education
+* Experience
+* Certifications
+* Contact
 
-- **GitHub Pages** — push to a repo, enable Pages, set the root to this folder.
-- **Vercel / Netlify** — drag-and-drop the folder (or connect the repo);
-  no build command needed.
+All animations, including the particle background, run across the entire page.
 
-Set `index.html` as the site's entry point.
+---
 
-## Theme system
+## Run Locally
 
-- Default theme is **dark**.
-- Every color is a CSS variable, defined once per theme in `styles.css`
-  under `[data-theme="dark"]` and `[data-theme="light"]`.
-- The toggle button flips a single `data-theme` attribute on `<html>`;
-  every section, badge, card, and the canvas animation updates instantly.
-- The choice is remembered via `localStorage` across visits.
+No setup is required.
 
-## Editing content
+Option 1:
+Open `index.html` directly in your browser.
 
-All copy (name, summary, skills, projects, certifications, experience,
-contact details) lives as plain text inside `portfolio.html`. Open the file,
-find the relevant `<section id="...">`, edit the text, save, and refresh —
-no data files, no rebuild.
+---
 
-To swap the resume: replace `M_Talha_Jameel_Resume.pdf` with a new file using
-the **exact same filename**. Both the download and "view in browser" links
-in `index.html` and `portfolio.html` will pick it up automatically.
+## Theme System
 
-## Contact integrations
+* Default theme is dark
+* Controlled via a `data-theme` attribute on the `<html>` element
+* Colors are defined in `styles.css` using CSS variables
+* Theme preference is stored using local Storage
 
-- **WhatsApp** — `https://wa.me/923211912419` with an optional pre-filled
-  greeting via `?text=`.
-- **Email** — `mailto:muhammadtalhajameel475@gmail.com`.
-- **LinkedIn** — `https://linkedin.com/in/Talha`.
-- **GitHub** — `https://github.com/Talha-tech-web`.
-- **Contact form** — builds a `mailto:` link from the typed Name / Email /
-  Message and opens the visitor's email client. No backend, nothing to host
-  or maintain.
+---
 
-## Design system (locked)
+## Editing Content
 
-Strictly monochrome — no blue, pink, purple, or green anywhere. Colors live
-entirely in `styles.css` as CSS custom properties; see that file's top
-section for the full dark/light token table.
+All content is inside `portfolio.html`.
 
-## Browser support
+To update:
 
-Modern evergreen browsers (Chrome, Firefox, Safari, Edge). Uses `Canvas API`,
-`IntersectionObserver`, and CSS custom properties — all widely supported.
-Respects `prefers-reduced-motion` for visitors who need reduced animation.
+1. Open the file
+2. Edit the relevant section
+3. Save and refresh
+
+No backend or database is required.
+
+---
+
+## Resume
+
+To update the resume:
+
+* Replace `M_Talha_Jameel_Resume.pdf`
+* Keep the same filename
+
+---
+
+## Contact
+
+* WhatsApp: https://wa.me/923211912419
+* Email: [muhammadtalhajameel475@gmail.com](mailto:muhammadtalhajameel475@gmail.com)
+
+The contact form uses a mail to link and does not require a backend.
+
+---
+
+## Design Philosophy
+
+* Strict monochrome aesthetic
+* Minimal and distraction-free layout
+* Clean typography and spacing
+* Subtle, meaningful animations
+
+---
+
+## Browser Support
+
+Supports all modern browsers:
+
+* Chrome
+* Firefox
+* Safari
+* Edge
+
+Technologies used:
+
+* Canvas API
+* IntersectionObserver
+* CSS Custom Properties
+
+---
+
+## Author
+
+M Talha Jameel
+Software Engineering Student | AI Enthusiast | Developer
