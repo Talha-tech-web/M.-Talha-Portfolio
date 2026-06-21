@@ -7,8 +7,8 @@ A self-contained, animated, cyber-minimal portfolio website built using pure HTM
 Designed with a focus on performance, simplicity, and clean aesthetics.
 
 ---
-<img width="1916" height="916" alt="image" src="https://github.com/user-attachments/assets/35d6862e-0a4c-4f84-94ae-4a30de71bf7b" />
-<img width="1911" height="912" alt="image" src="https://github.com/user-attachments/assets/1af42cc8-d1c0-4031-b113-6bdac865a1ef" />
+<img width="1916" height="916" alt="1" src="https://github.com/user-attachments/assets/b003b094-cd9e-4acc-b89e-2c669d0fb515" />
+<img width="1911" height="912" alt="2" src="https://github.com/user-attachments/assets/e0d070ae-3f67-4d32-968c-efbf27158d4a" />
 
 
 ## Features
