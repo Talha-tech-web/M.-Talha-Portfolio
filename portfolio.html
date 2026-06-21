@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M Talha Jameel — Software Engineer · Web Developer (MERN + AI)</title>
+  <meta name="description"
+    content="Portfolio of M Talha Jameel — final-year Software Engineering student, ML Intern, and full-stack developer building AI-powered web applications.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <canvas id="particle-canvas" class="bg-canvas-layer" aria-hidden="true"></canvas>
+  <!-- Mobile -->
+  <div class="menu-overlay"></div>
+  <nav class="mobile-menu" aria-label="Mobile navigation">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#journey">My Journey</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <!-- navbar -->
+  <header class="navbar">
+    <div class="navbar-inner">
+      <a href="#hero" class="brand mono"><span class="brand-dot"></span> M.TALHA</a>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#journey" class="nav-link">Journey</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#certifications" class="nav-link">Certs</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark / light theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <circle cx="12" cy="12" r="4.5" />
+            <path
+              d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1" />
+          </svg>
+        </button>
+        <button class="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-shell">
+
+    <!--1 -->
+    <section class="hero" id="hero">
+      <div class="hero-glow-overlay"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="pill reveal">
+            <span class="live-dot"></span> Available for opportunities
+          </div>
+
+          <h1 class="hero-name reveal reveal-delay-1">M Talha Jameel</h1>
+
+          <div class="hero-role mono reveal reveal-delay-2" id="hero-role">
+            <span class="type-text"></span><span class="cursor" aria-hidden="true"></span>
+          </div>
+
+          <p class="hero-tagline reveal reveal-delay-3">
+            Building intelligent, user-centered solutions at the intersection
+            of full-stack development and AI/ML.
+          </p>
+
+          <div class="btn-row reveal reveal-delay-3">
+            <a href="#contact" class="btn btn-primary">Connect With Me</a>
+            <a href="M_Talha_Jameel_Resume.pdf" download="M_Talha_Jameel_Resume.pdf" class="btn btn-secondary">Download
+              Resume</a>
+          </div>
+
+          <div class="stat-row reveal reveal-delay-4">
+            <div class="stat-item">
+              <div class="stat-number mono">04</div>
+              <div class="stat-label mono">Projects</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number mono">07</div>
+              <div class="stat-label mono">Certifications</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number mono">01</div>
+              <div class="stat-label mono">Internship</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number mono">'27</div>
+              <div class="stat-label mono">Graduation</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator mono">
+        Scroll <span class="chevron" aria-hidden="true"></span>
+      </div>
+    </section>
+
+    <!--ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-tag mono reveal">About</div>
+        <div class="about-grid">
+          <div class="reveal">
+            <div class="avatar-ring">
+              <div class="avatar-inner">
+                <img src="talha%20img.jpg" alt="M Talha Jameel" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+            </div>
+          </div>
+          <div>
+            <h2 class="about-headline reveal">Building things that matter.</h2>
+            <p class="about-text reveal reveal-delay-1">
+              I'm a final-year Software Engineering student, focused on AI/ML and full-stack development. I'm passionate
+              about building
+              real-world, data-driven solutions — from computer-vision safety systems to LLM-powered
+              web applications.
+            </p>
+            <p class="about-text reveal reveal-delay-2">
+              I recently worked as an ML Intern at DeveloperHub Corporation, where I structured
+              database requirements and trained a YOLOv8-based helmet-detection system. Outside that,
+              I build full-stack AI tools like DevTracker and FutureForge that put LLM APIs to
+              practical, everyday use for students.
+            </p>
+            <div class="stat-counters reveal reveal-delay-3">
+              <div class="counter-item">
+                <div class="counter-number mono" data-counter="4">0</div>
+                <div class="counter-label">Projects Built</div>
+              </div>
+              <div class="counter-item">
+                <div class="counter-number mono" data-counter="7">0</div>
+                <div class="counter-label">Certifications</div>
+              </div>
+              <div class="counter-item">
+                <div class="counter-number mono" data-counter="1">0</div>
+                <div class="counter-label">Internship</div>
+              </div>
+              <div class="counter-item">
+                <div class="counter-number mono" data-counter="2025">0</div>
+                <div class="counter-label">Active Since</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--SKILLS-->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-tag mono reveal">Skills</div>
+        <h2 class="section-title reveal">Tech stack &amp; tools.</h2>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-head">
+            <h3 class="mono">FRONTEND DEVELOPMENT</h3>
+            <div class="div-line"></div>
+          </div>
+          <div class="badge-grid">
+            <span class="badge"><span class="dot"></span>HTML</span>
+            <span class="badge"><span class="dot"></span>CSS</span>
+            <span class="badge"><span class="dot"></span>JavaScript</span>
+            <span class="badge"><span class="dot"></span>Bootstrap</span>
+            <span class="badge"><span class="dot"></span>Responsive Design</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-head">
+            <h3 class="mono">BACKEND &amp; LANGUAGES</h3>
+            <div class="div-line"></div>
+          </div>
+          <div class="badge-grid">
+            <span class="badge"><span class="dot"></span>Python</span>
+            <span class="badge"><span class="dot"></span>Node.js</span>
+            <span class="badge"><span class="dot"></span>JavaScript</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-head">
+            <h3 class="mono">AI/ML &amp; DATA SCIENCE</h3>
+            <div class="div-line"></div>
+          </div>
+          <div class="badge-grid">
+            <span class="badge"><span class="dot"></span>Pandas</span>
+            <span class="badge"><span class="dot"></span>NumPy</span>
+            <span class="badge"><span class="dot"></span>Scikit-learn</span>
+            <span class="badge"><span class="dot"></span>YOLOv8</span>
+            <span class="badge"><span class="dot"></span>OpenCV</span>
+            <span class="badge"><span class="dot"></span>NLTK</span>
+            <span class="badge"><span class="dot"></span>NLP</span>
+            <span class="badge"><span class="dot"></span>Matplotlib</span>
+            <span class="badge"><span class="dot"></span>Seaborn</span>
+            <span class="badge"><span class="dot"></span>Feature Engineering</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-head">
+            <h3 class="mono">LLM APIS</h3>
+            <div class="div-line"></div>
+          </div>
+          <div class="badge-grid">
+            <span class="badge"><span class="dot"></span>OpenAI API</span>
+            <span class="badge"><span class="dot"></span>Groq API</span>
+            <span class="badge"><span class="dot"></span>Google Gemini API</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-head">
+            <h3 class="mono">TOOLS &amp; PLATFORMS</h3>
+            <div class="div-line"></div>
+          </div>
+          <div class="badge-grid">
+            <span class="badge"><span class="dot"></span>VS Code</span>
+            <span class="badge"><span class="dot"></span>Jupyter Notebook</span>
+            <span class="badge"><span class="dot"></span>Google Colab</span>
+            <span class="badge"><span class="dot"></span>Power BI</span>
+            <span class="badge"><span class="dot"></span>Anaconda</span>
+            <span class="badge"><span class="dot"></span>Android Studio</span>
+            <span class="badge"><span class="dot"></span>Adobe Photoshop</span>
+            <span class="badge"><span class="dot"></span>Git</span>
+            <span class="badge"><span class="dot"></span>GitHub</span>
+            <span class="badge"><span class="dot"></span>Excel</span>
+            <span class="badge"><span class="dot"></span>n8n</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-tag mono reveal">Projects</div>
+        <h2 class="section-title reveal">What I've built.</h2>
+
+        <div class="project-grid">
+
+          <div class="project-card reveal">
+            <div class="card-glow"></div>
+            <div class="project-index mono">PROJECT / 01</div>
+            <h3 class="project-title">DevTracker</h3>
+            <div class="project-subtitle">AI-Powered Roadmap Tool</div>
+            <p class="project-desc">
+              An AI-driven learning roadmap platform that generates structured study paths and
+              tracks progress, with automated WhatsApp notifications to keep learners consistent.
+            </p>
+            <div class="tag-row">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Groq API</span><span
+                class="tag">WhatsApp Integration</span>
+            </div>
+            <div class="project-links">
+              <a href="https://talha-tech-web.github.io/DevTracker/" target="_blank" rel="noopener"
+                class="project-link mono">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 .5C5.6.5.5 5.6.5 12c0 5.1 3.3 9.4 7.9 11 .6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.7.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.2-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2.9-.3 1.9-.4 2.9-.4s2 .1 2.9.4c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.9 1.2 1.9 1.2 3.2 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.6 7.9-5.9 7.9-11C23.5 5.6 18.4.5 12 .5Z" />
+                </svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card reveal">
+            <div class="card-glow"></div>
+            <div class="project-index mono">PROJECT / 02</div>
+            <h3 class="project-title">FutureForge</h3>
+            <div class="project-subtitle">AI-Powered Career Assistant</div>
+            <p class="project-desc">
+              An AI career-guidance system that analyzes user input and generates personalized
+              study and career paths through an adaptive, LLM-driven conversational flow.
+            </p>
+            <div class="tag-row">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Node.js</span><span
+                class="tag">OpenAI API</span><span class="tag">Gemini API</span>
+            </div>
+          </div>
+
+          <div class="project-card reveal">
+            <div class="card-glow"></div>
+            <div class="project-index mono">PROJECT / 03</div>
+            <h3 class="project-title">HelmetVision</h3>
+            <div class="project-subtitle">Smart Helmet Detection System</div>
+            <p class="project-desc">
+              A real-time computer-vision system using YOLOv8 to detect helmet compliance from
+              road footage, with alert mechanisms for safety monitoring and rule enforcement.
+            </p>
+            <div class="tag-row">
+              <span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">YOLOv8</span><span
+                class="tag">Node.js</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Talha-tech-web/helmetVision.git" target="_blank" rel="noopener"
+                class="project-link mono">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 .5C5.6.5.5 5.6.5 12c0 5.1 3.3 9.4 7.9 11 .6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.7.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.2-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2.9-.3 1.9-.4 2.9-.4s2 .1 2.9.4c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.9 1.2 1.9 1.2 3.2 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.6 7.9-5.9 7.9-11C23.5 5.6 18.4.5 12 .5Z" />
+                </svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card reveal">
+            <div class="card-glow"></div>
+            <div class="project-index mono">PROJECT / 04</div>
+            <h3 class="project-title">Weather Analytics Dashboard</h3>
+            <div class="project-subtitle">Data Visualization &amp; Power BI</div>
+            <p class="project-desc">
+              An interactive dashboard analyzing weather patterns and trends, transforming raw
+              datasets into meaningful Power BI visualizations for decision-making support.
+            </p>
+            <div class="tag-row">
+              <span class="tag">Power BI</span><span class="tag">Python</span><span class="tag">Pandas</span><span
+                class="tag">NumPy</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Talha-tech-web/weather-bi-.git" target="_blank" rel="noopener"
+                class="project-link mono">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 .5C5.6.5.5 5.6.5 12c0 5.1 3.3 9.4 7.9 11 .6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.7.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.2-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2.9-.3 1.9-.4 2.9-.4s2 .1 2.9.4c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.9 1.2 1.9 1.2 3.2 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.6 7.9-5.9 7.9-11C23.5 5.6 18.4.5 12 .5Z" />
+                </svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!--MY JOURNEY -->
+    <section class="section" id="journey">
+      <div class="container">
+        <div class="section-tag mono reveal">My Journey</div>
+        <h2 class="section-title reveal">From classroom to codebase.</h2>
+        <p class="journey-intro reveal">
+          A single thread running through my degree and my work — each step feeding
+          the next, from first lines of code to production AI systems.
+        </p>
+
+        <div class="timeline">
+          <div class="timeline-track"></div>
+
+          <div class="timeline-entry reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year mono">AUG 2023</div>
+            <h3 class="timeline-heading">It started with a BS in Software Engineering</h3>
+            <p class="timeline-text">
+              Enrolled at the University of Agriculture, Faisalabad, with a clear focus on
+              AI/ML and full-stack development — curious about how data and interfaces
+              could work together to solve real problems.
+            </p>
+          </div>
+
+          <div class="timeline-entry reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year mono">2024</div>
+            <h3 class="timeline-heading">First real build: a web development bootcamp</h3>
+            <p class="timeline-text">
+              Completed an intensive web development program (Sylani) covering frontend
+              fundamentals and backend basics — the foundation that later became DevTracker
+              and FutureForge.
+            </p>
+          </div>
+
+          <div class="timeline-entry reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year mono">EARLY 2025</div>
+            <h3 class="timeline-heading">Going deeper into AI/ML and Generative AI</h3>
+            <p class="timeline-text">
+              Picked up Power BI, prompt engineering, and generative AI fundamentals through
+              Google and Coursera certifications, while experimenting with LLM APIs in
+              personal projects.
+            </p>
+          </div>
+
+          <div class="timeline-entry is-current reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year mono">MAY – AUG 2025</div>
+            <h3 class="timeline-heading">ML Internship at DeveloperHub Corporation</h3>
+            <p class="timeline-text">
+              Took the leap into industry — structuring ERD reports for system data
+              requirements and training a YOLOv8-based helmet-detection model for
+              real-world safety monitoring.
+            </p>
+          </div>
+
+          <div class="timeline-entry reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year mono">2025 — ONGOING</div>
+            <h3 class="timeline-heading">Building in public: DevTracker &amp; FutureForge</h3>
+            <p class="timeline-text">
+              Alongside coursework, shipped two AI-powered web apps of my own — a learning
+              roadmap tracker and a career-guidance assistant — both integrating LLM APIs
+              into clean, usable interfaces.
+            </p>
+          </div>
+
+          <div class="timeline-entry reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year mono">SEP 2027</div>
+            <h3 class="timeline-heading">Expected graduation — and what's next</h3>
+            <p class="timeline-text">
+              Heading toward final-year project work and graduation, looking for an
+              entry-level role where I can keep building practical, data-driven products.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--EDUCATION -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-tag mono reveal">Education</div>
+        <h2 class="section-title reveal">Academic background.</h2>
+
+        <div class="info-card reveal">
+          <div class="info-card-top">
+            <div>
+              <div class="info-card-role">BS in Software Engineering</div>
+              <div class="info-card-org">University of Agriculture, Faisalabad</div>
+            </div>
+            <div class="info-card-period mono">Aug 2023 — Sep 2027 (Expected)</div>
+          </div>
+          <ul>
+            <li>Specializing in AI/ML and full-stack development.</li>
+            <li>Hands-on project work spanning computer vision, data analysis, and LLM-integrated web apps.</li>
+            <li>Expected graduation: September 2027.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!--EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-tag mono reveal">Experience</div>
+        <h2 class="section-title reveal">Where I've worked.</h2>
+
+        <div class="info-card reveal">
+          <div class="info-card-top">
+            <div>
+              <div class="info-card-role">ML Intern</div>
+              <div class="info-card-org">DeveloperHub Corporation</div>
+            </div>
+            <div class="info-card-period mono">May 2025 — Aug 2025</div>
+          </div>
+          <ul>
+            <li>Created ERD reports to structure and analyze system data requirements for better database design.</li>
+            <li>Performed data analysis and trained a YOLOv8-based helmet-detection system, contributing to workflow
+              optimization and safety-monitoring insights.</li>
+          </ul>
+        </div>
+
+        <div class="info-card reveal reveal-delay-1">
+          <div class="info-card-top">
+            <div>
+              <div class="info-card-role">Full-Stack Developer</div>
+              <div class="info-card-org">Freelance / Personal Projects</div>
+            </div>
+            <div class="info-card-period mono">2025 — Ongoing</div>
+          </div>
+          <ul>
+            <li>Built AI-powered web solutions including DevTracker and FutureForge, integrating LLM APIs into
+              student-friendly interfaces.</li>
+            <li>Designed and shipped responsive, full-stack front-to-back features using HTML, CSS, JavaScript, and
+              Node.js.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!--CERTIFICATIONS-->
+    <section class="section" id="certifications">
+      <div class="container">
+        <div class="section-tag mono reveal">Certifications</div>
+        <h2 class="section-title reveal">Credentials &amp; continued learning.</h2>
+
+        <div class="cert-grid">
+          <div class="cert-card reveal">
+            <div class="cert-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M12 2l3 6 6 .9-4.5 4.3 1 6L12 16l-5.5 3.2 1-6L3 9l6-.9 3-6z" />
+              </svg></div>
+            <div class="cert-title">Google AI Essentials Specialization</div>
+            <div class="cert-meta mono">Coursera · 2025</div>
+          </div>
+          <div class="cert-card reveal reveal-delay-1">
+            <div class="cert-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M12 2l3 6 6 .9-4.5 4.3 1 6L12 16l-5.5 3.2 1-6L3 9l6-.9 3-6z" />
+              </svg></div>
+            <div class="cert-title">Introduction to Generative AI</div>
+            <div class="cert-meta mono">Google Cloud · 2025</div>
+          </div>
+          <div class="cert-card reveal reveal-delay-2">
+            <div class="cert-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M12 2l3 6 6 .9-4.5 4.3 1 6L12 16l-5.5 3.2 1-6L3 9l6-.9 3-6z" />
+              </svg></div>
+            <div class="cert-title">Google Prompting Essentials</div>
+            <div class="cert-meta mono">Coursera · 2025</div>
+          </div>
+          <div class="cert-card reveal">
+            <div class="cert-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M12 2l3 6 6 .9-4.5 4.3 1 6L12 16l-5.5 3.2 1-6L3 9l6-.9 3-6z" />
+              </svg></div>
+            <div class="cert-title">Crash Course on Machine Learning</div>
+            <div class="cert-meta mono">Codebeetle · 2025</div>
+          </div>
+          <div class="cert-card reveal reveal-delay-1">
+            <div class="cert-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M12 2l3 6 6 .9-4.5 4.3 1 6L12 16l-5.5 3.2 1-6L3 9l6-.9 3-6z" />
+              </svg></div>
+            <div class="cert-title">Crash Course on Python</div>
+            <div class="cert-meta mono">Codebeetle · 2025</div>
+          </div>
+          <div class="cert-card reveal reveal-delay-2">
+            <div class="cert-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M12 2l3 6 6 .9-4.5 4.3 1 6L12 16l-5.5 3.2 1-6L3 9l6-.9 3-6z" />
+              </svg></div>
+            <div class="cert-title">Power BI</div>
+            <div class="cert-meta mono">WS Cube · Jan 2025</div>
+          </div>
+          <div class="cert-card reveal">
+            <div class="cert-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M12 2l3 6 6 .9-4.5 4.3 1 6L12 16l-5.5 3.2 1-6L3 9l6-.9 3-6z" />
+              </svg></div>
+            <div class="cert-title">Web Development</div>
+            <div class="cert-meta mono">Sylani · 2024</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT-->
+    <section class="section" id="contact" style="border-bottom:none;">
+      <div class="container">
+        <div class="section-tag mono reveal">Contact</div>
+        <h2 class="section-title reveal">Let's connect.</h2>
+
+        <div class="contact-grid">
+          <div class="reveal">
+            <p class="contact-lead">
+              I'm just one click away — reach out directly, or use the form and
+              it'll open straight in your email client, pre-filled and ready to send.
+            </p>
+
+            <div class="social-icons">
+              <a href="mailto:muhammadtalhajameel475@gmail.com" class="social-icon" aria-label="Email" title="Email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                  <path d="M3 5h18v14H3z" />
+                  <path d="M3 6l9 7 9-7" />
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/in/talha-9ba85627b?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn" title="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3V9zm6.5 0H14v1.7h.06c.6-1.1 2-2.2 4.1-2.2 4.4 0 5.2 2.6 5.2 6V21h-4v-5c0-1.2 0-2.7-1.7-2.7-1.7 0-1.9 1.3-1.9 2.6V21h-4V9z" />
+                </svg>
+              </a>
+              <a href="https://github.com/Talha-tech-web" target="_blank" rel="noopener" class="social-icon"
+                aria-label="GitHub" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 .5C5.6.5.5 5.6.5 12c0 5.1 3.3 9.4 7.9 11 .6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.7.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.2-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2.9-.3 1.9-.4 2.9-.4s2 .1 2.9.4c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.9 1.2 1.9 1.2 3.2 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.6 7.9-5.9 7.9-11C23.5 5.6 18.4.5 12 .5Z" />
+                </svg>
+              </a>
+              <a href="https://wa.me/923211912419?text=Hi%20Talha%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect!"
+                target="_blank" rel="noopener" class="social-icon" aria-label="WhatsApp" title="WhatsApp">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.2.6-.7.8-.9.2-.2.2-.4.1-.6-.1-.2-.7-1.6-.9-2.2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.1s.9 2.5 1 2.7c.1.2 1.5 2.4 3.8 3.4 2.3 1 2.3.7 2.7.6.4 0 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.1-.2-.1-.4-.2z" />
+                  <path
+                    d="M12 2.5c-5.2 0-9.5 4.2-9.5 9.5 0 1.8.5 3.4 1.4 4.8L2.5 21.5l4.9-1.3c1.3.8 2.9 1.2 4.6 1.2 5.2 0 9.5-4.2 9.5-9.5s-4.3-9.4-9.5-9.4zm0 17.1c-1.5 0-2.9-.4-4.1-1.1l-.3-.2-2.8.7.7-2.7-.2-.3c-.8-1.3-1.2-2.7-1.2-4.2 0-4.3 3.5-7.8 7.9-7.8s7.9 3.5 7.9 7.8-3.6 7.8-7.9 7.8z" />
+                </svg>
+              </a>
+            </div>
+
+            <a href="mailto:muhammadtalhajameel475@gmail.com" class="contact-row">
+              <div class="contact-row-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="1.6">
+                  <path d="M3 5h18v14H3z" />
+                  <path d="M3 6l9 7 9-7" />
+                </svg></div>
+              <div>
+                <div class="contact-row-label mono">Email</div>
+                <div class="contact-row-value">muhammadtalhajameel475@gmail.com</div>
+              </div>
+            </a>
+            <a href="https://wa.me/923211912419?text=Hi%20Talha%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect!"
+              target="_blank" rel="noopener" class="contact-row">
+              <div class="contact-row-icon"><svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.2.6-.7.8-.9.2-.2.2-.4.1-.6-.1-.2-.7-1.6-.9-2.2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.1s.9 2.5 1 2.7c.1.2 1.5 2.4 3.8 3.4 2.3 1 2.3.7 2.7.6.4 0 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.1-.2-.1-.4-.2z" />
+                  <path
+                    d="M12 2.5c-5.2 0-9.5 4.2-9.5 9.5 0 1.8.5 3.4 1.4 4.8L2.5 21.5l4.9-1.3c1.3.8 2.9 1.2 4.6 1.2 5.2 0 9.5-4.2 9.5-9.5s-4.3-9.4-9.5-9.4zm0 17.1c-1.5 0-2.9-.4-4.1-1.1l-.3-.2-2.8.7.7-2.7-.2-.3c-.8-1.3-1.2-2.7-1.2-4.2 0-4.3 3.5-7.8 7.9-7.8s7.9 3.5 7.9 7.8-3.6 7.8-7.9 7.8z" />
+                </svg></div>
+              <div>
+                <div class="contact-row-label mono">WhatsApp</div>
+                <div class="contact-row-value">+92 321 1912419</div>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/talha-9ba85627b?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+              target="_blank" rel="noopener" class="contact-row">
+              <div class="contact-row-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="1.6">
+                  <circle cx="12" cy="12" r="9" />
+                </svg></div>
+              <div>
+                <div class="contact-row-label mono">LinkedIn</div>
+                <div class="contact-row-value">linkedin.com/in/Talha</div>
+              </div>
+            </a>
+            <a href="https://github.com/Talha-tech-web" target="_blank" rel="noopener" class="contact-row">
+              <div class="contact-row-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="1.6">
+                  <circle cx="12" cy="12" r="9" />
+                </svg></div>
+              <div>
+                <div class="contact-row-label mono">GitHub</div>
+                <div class="contact-row-value">github.com/Talha-tech-web</div>
+              </div>
+            </a>
+          </div>
+
+          <form id="contact-form" data-mail-to="muhammadtalhajameel475@gmail.com" class="reveal reveal-delay-1">
+            <div class="form-group">
+              <label for="cf-name">Name</label>
+              <input type="text" id="cf-name" name="name" placeholder="Talha" required>
+            </div>
+            <div class="form-group">
+              <label for="cf-email">Email</label>
+              <input type="email" id="cf-email" name="email" placeholder="talha@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" rows="5" placeholder="What would you like to talk about?"
+                required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;">Send Message</button>
+            <p class="form-note">This opens your email client with the message. </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <!-- /page-shell -->
+
+  <!--  FOOTER -->
+  <footer class="footer container page-shell">
+    <div class="footer-credit mono">© <span id="year"></span> M Talha Jameel.</div>
+    <div class="footer-socials">
+      <a href="mailto:muhammadtalhajameel475@gmail.com" class="social-icon" aria-label="Email"><svg viewBox="0 0 24 24"
+          fill="none" stroke="currentColor" stroke-width="1.6">
+          <path d="M3 5h18v14H3z" />
+          <path d="M3 6l9 7 9-7" />
+        </svg></a>
+      <a href="https://www.linkedin.com/in/talha-9ba85627b?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+        target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn"><svg viewBox="0 0 24 24"
+          fill="currentColor">
+          <path
+            d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3V9zm6.5 0H14v1.7h.06c.6-1.1 2-2.2 4.1-2.2 4.4 0 5.2 2.6 5.2 6V21h-4v-5c0-1.2 0-2.7-1.7-2.7-1.7 0-1.9 1.3-1.9 2.6V21h-4V9z" />
+        </svg></a>
+      <a href="https://github.com/Talha-tech-web" target="_blank" rel="noopener" class="social-icon"
+        aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12 .5C5.6.5.5 5.6.5 12c0 5.1 3.3 9.4 7.9 11 .6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.7.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.2-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2.9-.3 1.9-.4 2.9-.4s2 .1 2.9.4c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.9 1.2 1.9 1.2 3.2 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.6 7.9-5.9 7.9-11C23.5 5.6 18.4.5 12 .5Z" />
+        </svg></a>
+      <a href="https://wa.me/923211912419" target="_blank" rel="noopener" class="social-icon" aria-label="WhatsApp"><svg
+          viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.2.6-.7.8-.9.2-.2.2-.4.1-.6-.1-.2-.7-1.6-.9-2.2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.1s.9 2.5 1 2.7c.1.2 1.5 2.4 3.8 3.4 2.3 1 2.3.7 2.7.6.4 0 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.1-.2-.1-.4-.2z" />
+          <path
+            d="M12 2.5c-5.2 0-9.5 4.2-9.5 9.5 0 1.8.5 3.4 1.4 4.8L2.5 21.5l4.9-1.3c1.3.8 2.9 1.2 4.6 1.2 5.2 0 9.5-4.2 9.5-9.5s-4.3-9.4-9.5-9.4zm0 17.1c-1.5 0-2.9-.4-4.1-1.1l-.3-.2-2.8.7.7-2.7-.2-.3c-.8-1.3-1.2-2.7-1.2-4.2 0-4.3 3.5-7.8 7.9-7.8s7.9 3.5 7.9 7.8-3.6 7.8-7.9 7.8z" />
+        </svg></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+
+</html>
